@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/');
+body{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    margin: 0%;
+    font-family: 'poppins', sans-serif;
+}
+.parentDiv{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+
+}
+.leftDiv{
+    box-sizing: border-box;
+    background-color: #FEFEFE;
+    height:100vh;
+    width: 15vw;
+    border-right: #EEEEEE solid 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.centerDiv{
+    background-color: #F4F6FC;
+    height:100vh;
+    width: 61vw;
+    display: flex;
+    flex-direction:column;
+    align-items: stretch;
+    padding-left: 3.1vw;
+    padding-right: 3.1vw;
+}
+.centerTop{
+    background-color: #F8E5E9;
+    height: 19vh;
+    margin-top: 3vh;
+    border-radius: 15px;
+    padding-left: 4.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.centerWhiteDiv{
+    background-color: #ffffff;
+    height: 83.8vh;
+    margin-top: 3vh;
+    border-radius: 15px;
+    color: #a4a1b3;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 35px;
+    
+}
+.centerTop img{
+    position: absolute;
+    margin-left: 29vw;
+    margin-top: -5vh;
+}
+
+.centerMiddle{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.7vh;
+    justify-content: space-between;
+    
+
+}
+.resDiv{
+background-color: #FDFDFD;
+height: 42.5vh;
+width: 23.8vw;
+border-radius: 15px;
+
+}
+.timeDiv{
+    background-color: #FDFDFD;
+    height: 42.5vh;
+    width: 31.6vw;
+    border-radius: 15px;
+    
+}
+.centerBottom{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+    justify-content: space-between;
+}
+.button1{
+  width: 17.8vw;
+  height: 9.5vh;
+  background-color: #4E4CAB;
+  border-radius: 15px;
+}
+.button2{
+    width: 17.8vw;
+    height: 9.5vh;
+    background-color: #4E4CAB;
+    border-radius: 15px;
+  }
+  .button3{
+    width: 17.8vw;
+    height: 9.5vh;
+    background-color: #ee5253;
+    border-radius: 15px;
+  }
+.rightDiv{
+    background-color: #FEFEFE;
+    height:100vh;
+    width: 24vw;
+    border-left: #EEEEEE solid 2px;
+}
+#overlay {
+    position: fixed;
+    width: 17.8vw;
+    height: 9.5vh;
+    background-color:#ffffff;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 10000;
+    display: block;
+    border-radius: 15px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+/*FOR TEXT*/
+#logotext{
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color:#0B0915;
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 60px;
+    padding-left: 20px;
+}
+.logo{
+    margin-top: 2.6em;
+    margin-left: 2.2em;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 38vh;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 12vh;
+    margin-left: 0.7 em;
+    
+}
+.menuT{
+   /* box-shadow: 5px 0px 0px 0px black;*/
+    padding-right: 2.65vw;
+    
+    margin-left: 2.76vw;
+}
+
+.menuItems{
+    display: flex;
+    align-items: center;
+    
+}
+
+.selectedMenuText{
+    
+    text-decoration: none;
+    color:#494D50;
+    padding-left: 1.5vw;
+    cursor: pointer;
+    
+    
+    
+}
+
+.notSelectedMenuText{
+    
+    
+    text-decoration: none;
+    color: #B6B6B9;
+    padding-left: 1.5vw;
+    
+}
+
+.notification .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+  }
+
+.upgradebox{
+    background-color: #F5F6FA;
+    height: 21.8vh;
+    width: 11.5vw;
+    border-radius: 15px;
+    margin-top: 17vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.upgradebox img{
+    margin-top: -45px;
+    position: absolute;
+}
+#upgradeText{
+    
+    
+    text-decoration: none;
+    color: #B6B6B9;
+    text-align: center;
+    margin-top: 65px;
+}
+#upgradeText span{
+    color: #0B0915;
+    font-weight: 800;
+    font-size: 14px;
+}
+#upgradeButton{
+    background-color: #2D64F9;
+    width:70%;
+    height: 45px;
+    border-radius: 15px;
+    padding-bottom: 0px;
+    padding-top: 0%;
+    color:white;
+    text-align: center;
+    
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10p;
+    border: none;
+    margin-top: 10px;
+}
+.centerHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.8vh;
+}
+.centerHead h3{
+    
+    font-weight: 700;
+    font-size: 16px;
+    
+    padding-left:2px;
+}
+.welcomeText{
+    
+    margin-top: 0vh;
+}
+.welcomeText h3{
+    color: #D84A5A;
+    
+    font-weight: 600;
+    font-size: 20px;
+
+}
+.welcomeTextTagline p{
+    
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+
+}
+.welcomeTextTagline span{
+    font-weight: 700;
+}
+
+.resDivHead,.timeDivHead{
+   margin-left: 30px;
+   margin-top: 30px;
+}
+.centerDivHeading{
+    
+    font-size: 15px;
+    font-weight: 700;
+}
+.button1,.button2,.button3{
+    display: flex;
+    align-items: center;
+    
+}
+.buttonInside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -65px;
+}
+.courseName span{
+    
+    font-size: 12px;
+    font-weight: 400;
+    color:white;
+    opacity: 50%;
+    margin-left: 5vw;
+}
+.courseTopic span{
+    
+    font-size: 15px;
+    font-weight: 600;
+    color:white;
+    margin-left: 5vw;
+}
+.logout span{
+    font-size: 15px;
+    font-weight: 600;
+}
+.logout{
+    margin-left: 2.5vw;
+    margin-top: 5.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2.5vw;
+
+}
+.studNameDiv{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 21.5vh;
+}
+.studNameDiv img{
+    position: absolute;
+    align-self: center;
+    margin-top: -10em;
+}
+#studName{
+    font-size: 16px;
+    font-weight: 600;
+}
+#studNameTag{
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #B6B6B9;
+}
+.sub1DivText,.sub2DivText{
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 28px;
+}
+.sub1Div,.sub2Div{
+    display: flex;
+}
+.sub2Div{
+    margin-top:3.5vh;
+}
+.rightSubDiv{
+    margin-top: 6vh;
+    
+}
+#subName{
+    font-size: 14px;
+    font-weight: 600;
+}
+#subNameTag{
+    font-size: 11px;
+    font-weight: 600;
+    color: #B6B6B9;
+    margin-top: 0.6vh;
+}
+.remindersDiv{
+    margin-top: 7vh;
+    
+}
+#remHead{
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 2.5vw;
+}
+.rightSubDivRem{
+    margin-top: 3.5vh;
+    margin-left: 0vw;
+}
+#courseHead{
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+.centerBottomFull{
+    margin-top: 3.7vh;
+}
+.iconBox{
+    background-color: rgba(255, 255, 255, 0.301);
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconBox span{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+
+}
+.iconBox2{
+    background-color: rgba(202, 200, 200, 0.479);
+    height: 50px;
+    width: 50px;
+    margin-left: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconBox2 span{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+
+}
+.message{
+    background-color: rgba(99, 161, 202, 0.205);
+}
+.alert{
+    background-color: rgba(255, 0, 0, 0.13);
+}
+
+.search{
+    background-color: rgba(99, 161, 202, 0.205);
+    
+}

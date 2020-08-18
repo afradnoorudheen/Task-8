@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TASK-8 AFRAD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class=parentDiv >
+        
+            <div class=leftDiv>
+              <a class=logo href="#">
+                  <img src="logo.png" alt="">
+              <span id=logotext>Linglee</span>
+              </a>
+              <div class=menu>
+                  <div class=menuT id=bor1>
+                    <a onclick="show('dashboardItems',0)" style="cursor: pointer;"> 
+                        <div class=menuItems>
+                    <svg id=icon1 width="1.2em" height="1.2em" style="fill:#4E71E7;" viewBox="0 0 16 16" class="bi bi-layout-text-window-reverse" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2 1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm12-1a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                        <path fill-rule="evenodd" d="M5 15V4H4v11h1zM.5 4h15V3H.5v1zM13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5z"/>
+                      </svg>
+                    <span id=text1 class=selectedMenuText>Dashboard</span>
+                       </div>
+                   </a> 
+                  </div>
+                  <div class=menuT id=bor2>
+                      <a onclick="show('classesItems',1)" style="cursor: pointer;"> 
+                        <div class=menuItems>
+                    <span id=icon2 style="font-size: 1.2em; color:#B6B6B9;">
+                        <i class="fa fa-folder-o" aria-hidden="true"></i>
+                      </span>
+                    <span id=text2 class=notSelectedMenuText>Classes</span>
+                        </div>
+
+                       </a>
+                     
+                  </div>
+                  <div class=menuT id=bor3>
+                      <a onclick="show('resourcesItems',2)" style="cursor: pointer;">
+                        <div class=menuItems>
+                    <svg id=icon3 width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-wallet" fill="#B6B6B9" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2 4v8.5A1.5 1.5 0 0 0 3.5 14h10a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 1 1 0v8a1.5 1.5 0 0 1-1.5 1.5h-10A2.5 2.5 0 0 1 1 12.5V4h1z"/>
+                        <path fill-rule="evenodd" d="M1 4a2 2 0 0 1 2-2h11.5a.5.5 0 0 1 0 1H3a1 1 0 0 0 0 2h11.5v1H3a2 2 0 0 1-2-2z"/>
+                        <path fill-rule="evenodd" d="M13 5V3h1v2h-1z"/>
+                      </svg>  
+                    <span id=text3 class=notSelectedMenuText>Resources</span>
+                        </div>
+                    </a>
+                  </div>
+                  <div class=menuT id=bor4> 
+                      <a onclick="show('learningItems',3)" style="cursor: pointer;" >
+                        <div class=menuItems>
+                    <svg id=icon4 width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-calendar4" fill="#B6B6B9" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                        <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"/>
+                        <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"/>
+                      </svg> 
+                      
+                    <span id=text4 class=notSelectedMenuText>Learning plan</span>
+                        </div>
+                    </a>
+                  </div>
+                  <div class=menuT id=bor5>
+                      <a onclick="show('chatItems',4)" style="cursor: pointer;">
+                        <div class=menuItems>
+                    <svg id=icon5 width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-chat-left" fill="#B6B6B9" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v11.586l2-2A2 2 0 0 1 4.414 11H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        
+                      </svg>  
+                      
+                      
+                    <span id=text5 href="#" class=notSelectedMenuText>Chat</span>
+                        </div>
+                     </a>
+                  </div>
+                  <div class=menuT id=bor6>
+                      <a onclick="show('settingsItems',5)" style="cursor: pointer;">
+                          <div class=menuItems>
+                    <svg id=icon6 width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="#B6B6B9" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                      </svg> 
+                    <span id=text6 class=notSelectedMenuText>Settings</span>
+                        </div>
+                       </a>
+                  </div>
+              </div>
+              <div class=upgradebox>
+                  <img src="folder.png" alt="">
+                  <p id=upgradeText>Upgrade to <span>PRO</span> for<br>more resources.</p>
+                  <button id=upgradeButton>Upgrade</button>
+              </div>
+            </div>
+         <div class=centerDiv>
+                <div class=centerHead>
+                   <h3 id=centerHeading>Dashboard</h3>
+                   <div class="iconBox2 message">
+                    <span>
+                        <span style="font-size: 1.1em; color:#1663c7;">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </span>
+
+                    </span>
+                </div>
+                   
+                </div>
+             <div id=centerItems> 
+            
+            </div>  
+             
+            <div id=dashboardItems style="display: none;">
+                <div class=centerTop>
+                      <div class=welcomeText>
+                         <h3>Welcome back Anna!</h3>
+                         <div class=welcomeTextTagline>
+                            <p>You've learned <span>80%</span> of your goal this week!<br>Keep it up and improve your results!</p>
+                       </div>
+                      </div>
+                      
+                      <img src="girlWIthLap.png" alt="">
+                </div>
+                <div class=centerMiddle>
+                    <div class=resDiv>
+                        <div class=resDivHead>
+                            <h3 class=centerDivHeading>Latest results</h3>
+                        </div>
+                    </div>
+                    <div class=timeDiv>
+                        <div class=timeDivHead>
+                            <h3 class=centerDivHeading>Time spent on learning</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class=centerBottomFull>
+                <span id=courseHead>Your Courses</span>
+                <div class=centerBottom>
+                    <div class=button1>
+                        <div class=iconBox>
+                            <span>B2</span>
+                        </div>
+                        <div class=buttonInside>
+                        <div class=courseName>
+                            <span>Business English</span>
+                        </div>
+                        <div class=courseTopic>
+                            <span>Grammar</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class=button2>
+                        <div id=overlay></div>
+                        <div class=iconBox>
+                            <span>C2</span>
+                        </div>
+                        <div class=buttonInside>
+                        <div class=courseName>
+                            <span>Common English</span>
+                        </div>
+                        <div class=courseTopic>
+                            <span>Phrasal verbs</span>
+                        </div>
+                      </div>
+                        
+                    </div>
+                    
+                    <div class=button3>
+                        <div id=overlay></div>
+                        <div class=iconBox>
+                             <span>B2</span>
+                        </div>
+                        <div class=buttonInside>
+                        <div class=courseName>
+                            <span>Business Spanish</span>
+                        </div>
+                        <div class=courseTopic>
+                            <span>Vocabulary</span>
+                        </div>
+                        </div>
+                        
+                    </div>
+            
+                 </div>
+                </div>
+             </div>
+
+            <div id=classesItems  style="display:none">
+                 <div class=centerWhiteDiv>
+                       <h1>Classes</h1>
+
+                 </div>
+                
+
+            </div>
+             
+            <div id=resourcesItems  style="display:none">
+                <div class=centerWhiteDiv>
+                    <h1>Resources</h1>
+
+                </div>
+               
+
+           </div>
+
+           <div id=learningItems  style="display:none">
+            <div class=centerWhiteDiv>
+                <h1>Learning plan</h1>
+
+            </div>
+           
+
+          </div>
+
+          <div id=chatItems  style="display:none">
+            <div class=centerWhiteDiv>
+                <h1>Chat</h1>
+
+            </div>
+           
+
+       </div>
+
+       <div id=settingsItems  style="display:none">
+        <div class=centerWhiteDiv>
+            <h1>Settings</h1>
+
+        </div>
+       
+
+   </div>
+
+
+            </div>
+            <div class=rightDiv>
+                <div class=logout>
+                    <span>Logout</span>
+                    <span style="font-size: 1.5em; color:#B6B6B9;">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                      </span>
+                    
+                </div>
+                <div class=studNameDiv>
+                    <img src="avatar.png" alt="">
+                    <span id=studName>Anna Morrison</span>
+                    <span id=studNameTag>Student</span>
+                </div>
+                <div class=rightSubDiv>
+                    <div class=sub1Div>
+                        <div class=iconBox2>
+                            <span>B1</span>
+                        </div>
+                        <div class=sub1DivText>
+                        <span id=subName>English</span>
+                        <span id=subNameTag>High intermediate</span>
+                    </div>
+                    </div>
+                    <div class=sub2Div>
+                        <div class=iconBox2>
+                            <span>C2</span>
+                        </div>
+                        <div class=sub1DivText>
+                        <span id=subName>Spanish</span>
+                        <span id=subNameTag>Advanced</span>
+                    </div>
+                </div>
+                </div>
+                <div class=remindersDiv>
+                      <span id=remHead>Reminders</span>
+                      <div class=rightSubDivRem>
+                          <div class=sub1Div>
+                            <div class="iconBox2 alert">
+                                <span>
+                                    <span style="font-size: 1.3em; color:#c72a16;">
+                                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                      </span>
+                                </span>
+                            </div>
+                        <div class=sub1DivText>
+                            <span id=subName>Eng - Vocabulary test</span>
+                            <span id=subNameTag>24 Sep 2019, Friday</span>
+                        </div>
+                        </div>
+                        <div class=sub2Div>
+                            <div class="iconBox2 message">
+                                <span>
+                                    <span style="font-size: 1.1em; color:#1663c7;">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                      </span>
+
+                                </span>
+                            </div>
+                        <div class=sub2DivText>
+                            <span id=subName>Eng - Send grammar homework</span>
+                            <span id=subNameTag>29 Sep 2019, Wednesday</span>
+                        </div>
+                        </div>
+                        <div class=sub2Div>
+                            <div class="iconBox2 message">
+                                <span>
+                                    <span style="font-size: 1.1em; color:#1663c7;">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                      </span>
+                                </span>
+                            </div>
+                        <div class=sub2DivText>
+
+                            <span id=subName>Spanish - Send essay</span>
+                            <span id=subNameTag>05 Oct 2019, Monday</span>
+                        </div>
+                      </div>
+                      </div>
+                </div>
+                
+            </div>
+
+        
+     
+    </div>
+    
+<script src="script.js"></script>   
+</body>
+</html>
